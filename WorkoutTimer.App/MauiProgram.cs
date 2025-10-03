@@ -20,7 +20,7 @@ namespace WorkoutTimer.App
                 .AddSingleton<IIntervalService, InMemoryIntervalService>()
                 .AddSingleton<RegularIntervalModel>()
                 .AddTransient<NewRegularIntervalModel>()
-                .AddSingleton<StaggeredIntervalModel>()   
+                .AddSingleton<StaggeredIntervalModel>()
                 .AddTransient<NewStaggeredIntervalModel>()
                 .AddSingleton<SettingsModel>()
                 .AddSingleton<Views.StaggeredIntervals>()
@@ -28,8 +28,6 @@ namespace WorkoutTimer.App
                 .AddTransient<Views.NewStaggeredInterval>()
                 .AddTransient<Views.NewRegularInterval>()
                 .AddSingleton<Views.Settings>()
-
-
 
                 ;
 
