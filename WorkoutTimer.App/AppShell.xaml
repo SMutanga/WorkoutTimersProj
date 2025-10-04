@@ -6,16 +6,20 @@
     xmlns:views="clr-namespace:WorkoutTimer.App.Views"
     Shell.FlyoutBehavior="{OnIdiom Phone=Flyout, Default=Locked}">
 
-
-    <ShellContent
+    <FlyoutItem Title="Regualar Fly">
+        <ShellContent
         Title="Regular"
-        ContentTemplate="{DataTemplate views:RegularIntervals}" />
-
-
-    <ShellContent
+        ContentTemplate="{DataTemplate views:RegularIntervals}"
+        Route="RegularIntervals" />
+    </FlyoutItem>
+    <FlyoutItem Title="Staggered Fly">
+        <ShellContent
       Title="Staggered"
       ContentTemplate="{DataTemplate views:StaggeredIntervals}"
       Route="StaggeredIntervals" />
+        </FlyoutItem>
+
+    <MenuItem Text="Settings" Command="{Binding NavigateToSettingsCommand}"/>
 </Shell>
 
 
